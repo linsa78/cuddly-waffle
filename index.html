@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>План подготовки к ЕГЭ — русский и общество</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>📚 План подготовки к ЕГЭ</h1>
+    <p class="subtitle">Русский язык и обществознание · 6 месяцев · 2 темы в неделю</p>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-subject="russian">Русский язык</button>
+    <button class="tab" data-subject="social">Обществознание</button>
+    <button class="tab" data-subject="calendar">📅 Календарь</button>
+  </nav>
+
+  <main id="content" class="content"></main>
+
+  <div id="testModal" class="modal hidden">
+    <div class="modal-box">
+      <button id="closeModal" class="close-btn">✕</button>
+      <h2 id="testTitle">Тест</h2>
+      <div id="testBody"></div>
+      <button id="submitTest" class="btn primary">Проверить результат</button>
+      <div id="testResult" class="test-result hidden"></div>
+    </div>
+  </div>
+
+  <div id="lectureModal" class="modal hidden">
+    <div class="modal-box">
+      <button id="closeLecture" class="close-btn">✕</button>
+      <h2 id="lectureTitle">Лекция</h2>
+      <div id="lectureBody" class="lecture-body"></div>
+      <button id="goToTest" class="btn primary">Пройти тест →</button>
+    </div>
+  </div>
+
+  <!-- ===== ЛОГИКА ===== -->
+  <script src="app.js"></script>
+
+  <!-- ===== ТЕМЫ РУССКИЙ ===== -->
+  <script src="topics/rus_01.js"></script>
+  <script src="topics/rus_02.js"></script>
+  <script src="topics/rus_03.js"></script>
+  <script src="topics/rus_04.js"></script>
+  <script src="topics/rus_05.js"></script>
+  <script src="topics/rus_06.js"></script>
+  <script src="topics/rus_07.js"></script>
+  <script src="topics/rus_08.js"></script>
+
+  <!-- ===== ТЕМЫ ОБЩЕСТВО ===== -->
+  <script src="topics/soc_01.js"></script>
+  <script src="topics/soc_02.js"></script>
+  <script src="topics/soc_03.js"></script>
+  <script src="topics/soc_04.js"></script>
+  <script src="topics/soc_05.js"></script>
+  <script src="topics/soc_06.js"></script>
+  <script src="topics/soc_07.js"></script>
+
+  <!-- ===== ПРОБНИКИ ===== -->
+  <script src="topics/probnik_1.js"></script>
+  <script src="topics/probnik_1_soc.js"></script>
+
+  <!-- ===== ЗАПУСК ===== -->
+  <script>
+    refreshCurrentTab();
+  </script>
+</body>
+</html>
